@@ -1,0 +1,10 @@
+﻿@page "/"
+
+<section class="memory-game">
+    @foreach(var card in Cards)
+    {
+        <Card CardModel="card" OnPressed="() => CheckCards(card)"/>
+    }
+</section>
+
+
